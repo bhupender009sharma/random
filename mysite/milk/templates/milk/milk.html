@@ -1,0 +1,14 @@
+<html>
+    <head>
+     <title>Add Customer</title>   
+    </head>
+
+    <head>Add Customer</head>
+
+    <form method="POST" >
+        {% csrf_token %}
+        {{form.as_p}}
+
+        <button type="submit", name="save", value="save">Save</button>
+    </form>
+</html>
